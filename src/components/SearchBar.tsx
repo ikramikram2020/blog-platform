@@ -1,11 +1,19 @@
-import Link from "next/link";
+interface SearchBarProps {
+  searchText: string;
+  setSearchText: (text: string) => void;
+}
 
-export default function Header() {
+export default function SearchBar({
+  searchText,
+  setSearchText,
+}: SearchBarProps) {
   return (
-    <header className="bg-pink-300 p-6 mb-6 text-center">
-      <Link href="/">
-        <h1 className="text-3xl font-bold text-white">🌸 My Blog</h1>
-      </Link>
-    </header>
+    <input
+      type="text"
+      placeholder="Search for article .."
+      value={searchText}
+      onChange={(e) => setSearchText(e.target.value)}
+      className="w-full p-3 mb-6 border rounded"
+    />
   );
 }
