@@ -1,39 +1,57 @@
 import { Post } from "./types";
 
-// list of blog posts
 export const posts: Post[] = [
   {
     id: "post1",
-    title: "Hello World",
+    title: "✨ Welcome to My  Blog ✨",
     date: "2025-09-10",
-    content: `# Welcome 🌸
+    content: `# Hello 🌸
 
-This is my **first blog post** written in Markdown.
+This is my **first post** with a *cute design*.
 
-## Features:
-- Easy blogging
-- Clean design
-- Markdown support
-
-## Code Example:
-\`\`\`javascript
-console.log("Hello Blog!");
-\`\`\`
+- 🌼 Soft colors  
+-  Simple animations  
+- 💖 Friendly vibes  
 `,
   },
   {
     id: "post2",
-    title: "Learning Next.js",
+    title: " Why I Love Next.js",
+    date: "2025-09-11",
+    content: `# Next.js is Awesome 🚀
+
+## Features I enjoy:
+- File-based routing 📂
+- Server-side rendering ⚡
+- Static site generation 🌍
+- Easy deploy with Vercel 🥳
+`,
+  },
+  {
+    id: "post3",
+    title: "🎀 Learning TypeScript",
     date: "2025-09-12",
-    content: `# Learning Next.js 🚀
+    content: `# TypeScript ❤️
 
-In this post, we talk about why **Next.js** is awesome.
+Adding **types** makes your code:
+- Safer 🛡️
+- Easier to debug 🔍
+- More professional ✨
 
-### Benefits:
-- File-based routing
-- Server-side rendering
-- Static site generation
-- Easy deployment with Vercel
+\`\`\`ts
+const greeting: string = "Hello!";
+console.log(greeting);
+\`\`\`
+`,
+  },
+  {
+    id: "post4",
+    title: "  Design Inspiration",
+    date: "2025-09-13",
+    content: `# Aesthetic Design 🎨
+
+I love **minimalist** and **soft pastel** colors.  
+They make reading *peaceful* and *cute*. 💖
 `,
   },
 ];
